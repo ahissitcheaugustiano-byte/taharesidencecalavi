@@ -10,18 +10,20 @@ import room3 from "@/assets/room-3.jpg";
 import room4 from "@/assets/room-4-updated-v2.jpg";
 import room5 from "@/assets/room-5-updated.jpg";
 import room6 from "@/assets/room-6-updated-v2.jpg";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
 import room2Alt from "@/assets/room-2-updated.jpg";
+const gallery1 = "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800";
+const gallery2 = "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800";
+const gallery3 = "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800";
+const gallery4 = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800";
+const gallery5 = "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800";
+const gallery6 = "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800";
 
 const masonryImages = [
-  heroBg, room4, gallery1,
+  gallery5, room4, gallery1,
   room6, gallery2, room1,
   gallery3, room2, about,
   gallery4, room3, room2Alt,
-  heroBg, room5, heroBg // Total 15 images = 5 rows of 3
+  heroBg, room5, gallery5 // Total 15 images = 5 rows of 3
 ];
 const carouselImages = [room1, gallery1, room2, gallery2, room3, gallery3, room4, gallery4];
 
