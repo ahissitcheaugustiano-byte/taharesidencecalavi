@@ -8,6 +8,7 @@ if (typeof window !== "undefined") {
   window.process = window.process || { env: { NODE_ENV: import.meta.env.MODE } };
   
   console.log("TAHA RESIDENCE: App is loading...");
+  console.log("BUILD SIGNATURE: 2026-04-21-15-14-10");
   // Use a timeout to ensure it shows up even if there's immediate pressure
   setTimeout(() => {
     const debugDiv = document.createElement("div");
