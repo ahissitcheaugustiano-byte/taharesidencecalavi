@@ -41,9 +41,20 @@
   <meta name="twitter:title" content="TAHA RESIDENCE - Votre Havre de Paix a Cotonou">
   <meta property="og:description" content="TAHA RESIDENCE - Maison d&#39;hote premium a Calavi Bidossessi, Benin. Chambres confortables, securisees et abordables pres de Cotonou.">
   <meta name="twitter:description" content="TAHA RESIDENCE - Maison d&#39;hote premium a Calavi Bidossessi, Benin. Chambres confortables, securisees et abordables pres de Cotonou.">
+  <script type="module" crossorigin src="/assets/index-CE07HiRe.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CwYLBzeI.css">
 </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Diagnostic check for production deployment
+      if (window.location.hostname !== 'localhost' && !window.location.hostname.includes('127.0.0.1')) {
+        console.log("PRODUCTION MODE DETECTED");
+        // If this script is running from the root index.html (unbuilt), this alert might help
+        if (document.querySelector('script[src="/src/main.tsx"]')) {
+          console.warn("WARNING: Running unbuilt source files in production! MIME issues expected.");
+        }
+      }
+    </script>
   </body>
 </html>

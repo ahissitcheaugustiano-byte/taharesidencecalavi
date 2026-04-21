@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp dist/index.html index.html && cp -rf dist/assets .",
+    "build": "vite build && npx shx rm -rf assets && npx shx cp -rf dist/* .",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
