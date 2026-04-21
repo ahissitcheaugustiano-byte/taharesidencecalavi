@@ -17,11 +17,11 @@ import gallery4 from "@/assets/gallery-4.jpg";
 import room2Alt from "@/assets/room-2-updated.jpg";
 
 const masonryImages = [
-  gallery5, room4, gallery1,
+  heroBg, room4, gallery1,
   room6, gallery2, room1,
   gallery3, room2, about,
   gallery4, room3, room2Alt,
-  heroBg, room5, gallery5 // Total 15 images = 5 rows of 3
+  heroBg, room5, heroBg // Total 15 images = 5 rows of 3
 ];
 const carouselImages = [room1, gallery1, room2, gallery2, room3, gallery3, room4, gallery4];
 
