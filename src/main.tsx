@@ -2,9 +2,48 @@ import { createRoot } from "react-dom/client";
 import App from "./App";
 import "./index.css";
 
-console.log("TAHA RESIDENCE: Application initialization starting...");
+// Global process polyfill for production environment
+if (typeof window !== "undefined") {
+  // @ts-expect-error - polyfilling process
+  window.process = window.process || { env: { NODE_ENV: import.meta.env.MODE } };
+  
+  console.log("TAHA RESIDENCE: App is loading...");
+  // Use a timeout to ensure it shows up even if there's immediate pressure
+  setTimeout(() => {
+    const debugDiv = document.createElement("div");
+    debugDiv.innerHTML = "App Loaded (Debug)";
+    debugDiv.style.position = "fixed";
+    debugDiv.style.bottom = "10px";
+    debugDiv.style.right = "10px";
+    debugDiv.style.background = "rgba(0, 128, 0, 0.4)";
+    debugDiv.style.color = "white";
+    debugDiv.style.zIndex = "9999";
+    debugDiv.style.padding = "4px 8px";
+    debugDiv.style.borderRadius = "4px";
+    debugDiv.style.fontSize = "10px";
+    debugDiv.style.pointerEvents = "none";
+    document.body.appendChild(debugDiv);
+  }, 2000);
+}
 
-createRoot(document.getElementById("root")!).render(<App />);
+try {
+  const rootElement = document.getElementById("root");
+  if (!rootElement) throw new Error("Root element not found");
+  createRoot(rootElement).render(<App />);
+} catch (error) {
+  console.error("Critical rendering error:", error);
+  if (typeof window !== "undefined") {
+    const errorDiv = document.createElement("div");
+    errorDiv.style.padding = "20px";
+    errorDiv.style.color = "red";
+    errorDiv.style.background = "white";
+    errorDiv.style.position = "fixed";
+    errorDiv.style.inset = "0";
+    errorDiv.style.zIndex = "10000";
+    errorDiv.innerHTML = `<h1>Critical Error</h1><pre>${error instanceof Error ? error.stack : error}</pre>`;
+    document.body.appendChild(errorDiv);
+  }
+}
 
 // Global image fade-in for any <img> on the page (perf + UX)
 if (typeof window !== "undefined") {
