@@ -34,31 +34,45 @@ const ExitIntentPopup = () => {
         onClick={() => setShow(false)}
       >
         <motion.div
-          className="bg-card rounded-xl p-8 max-w-md w-full text-center shadow-2xl relative"
-          initial={{ scale: 0.9, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
+          className="bg-card rounded-2xl p-6 sm:p-10 max-w-[90%] sm:max-w-md w-full text-center shadow-2xl relative border border-white/10 group"
+          initial={{ scale: 0.9, opacity: 0, y: 20 }}
+          animate={{ scale: 1, opacity: 1, y: 0 }}
+          style={{ maxHeight: "calc(100vh - 40px)", overflowY: "auto" }}
           onClick={(e) => e.stopPropagation()}
         >
-          <button className="absolute top-4 right-4 text-muted-foreground hover:text-foreground" onClick={() => setShow(false)}>
+          <button 
+            className="absolute top-4 right-4 p-2 text-muted-foreground hover:text-foreground hover:bg-muted rounded-full transition-colors z-10" 
+            onClick={() => setShow(false)}
+            aria-label="Fermer"
+          >
             <X size={20} />
           </button>
-          <h3 className="font-heading text-2xl font-bold mb-3">
+          
+          <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i className="fas fa-gift text-2xl text-primary animate-bounce"></i>
+          </div>
+
+          <h3 className="font-heading text-xl sm:text-2xl font-extrabold mb-3 text-foreground">
             {t("Avant de partir...", "Before you leave...")}
           </h3>
-          <p className="text-sm text-muted-foreground mb-6" style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 500 }}>
+          <p className="text-sm sm:text-base text-muted-foreground mb-6 leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif" }}>
             {t(
-              "Ne manquez pas nos meilleures offres. Laissez-nous votre email et bénéficiez d'une réduction exclusive sur votre prochain séjour.",
+              "Ne manquez pas nos meilleures d'offres. Laissez-nous votre email et bénéficiez d'une réduction exclusive sur votre prochain séjour.",
               "Don't miss our best offers. Leave us your email and enjoy an exclusive discount on your next stay."
             )}
           </p>
-          <div className="flex gap-2">
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Email"
-              className="flex-1 bg-background border border-border rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
-            />
+          
+          <div className="flex flex-col gap-3">
+            <div className="relative">
+              <i className="fas fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground text-sm"></i>
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="votre@email.com"
+                className="w-full bg-muted/50 border border-border rounded-xl pl-10 pr-4 py-3.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+              />
+            </div>
             <button
               onClick={() => {
                 if (email) {
@@ -66,13 +80,16 @@ const ExitIntentPopup = () => {
                   setShow(false);
                 }
               }}
-              className="btn-primary text-sm py-2 px-4"
+              className="btn-primary w-full py-4 text-sm font-bold shadow-lg shadow-primary/20 active:scale-95 transition-transform"
             >
-              {t("Je veux mon offre", "I want my offer")}
+              {t("Je veux mon offre", "Claim My Offer")}
             </button>
           </div>
-          <button onClick={() => setShow(false)} className="text-xs text-muted-foreground mt-4 hover:underline block mx-auto">
-            {t("Non merci", "No thanks")}
+          <button 
+            onClick={() => setShow(false)} 
+            className="text-xs font-semibold text-muted-foreground mt-6 hover:text-foreground transition-colors uppercase tracking-widest hover:underline"
+          >
+            {t("Peut-être plus tard", "Maybe later")}
           </button>
         </motion.div>
       </motion.div>

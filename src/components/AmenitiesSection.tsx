@@ -29,7 +29,7 @@ const AmenitiesSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {amenities.map((item, i) => {
             const data = lang === "fr" ? item.fr : item.en;
             const Icon = item.icon;

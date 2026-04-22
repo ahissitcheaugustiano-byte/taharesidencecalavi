@@ -9,22 +9,6 @@ if (typeof window !== "undefined") {
   
   console.log("TAHA RESIDENCE: App is loading...");
   console.log("BUILD SIGNATURE: 2026-04-21-15-14-10");
-  // Use a timeout to ensure it shows up even if there's immediate pressure
-  setTimeout(() => {
-    const debugDiv = document.createElement("div");
-    debugDiv.innerHTML = "App Loaded (Debug)";
-    debugDiv.style.position = "fixed";
-    debugDiv.style.bottom = "10px";
-    debugDiv.style.right = "10px";
-    debugDiv.style.background = "rgba(0, 128, 0, 0.4)";
-    debugDiv.style.color = "white";
-    debugDiv.style.zIndex = "9999";
-    debugDiv.style.padding = "4px 8px";
-    debugDiv.style.borderRadius = "4px";
-    debugDiv.style.fontSize = "10px";
-    debugDiv.style.pointerEvents = "none";
-    document.body.appendChild(debugDiv);
-  }, 2000);
 }
 
 try {
