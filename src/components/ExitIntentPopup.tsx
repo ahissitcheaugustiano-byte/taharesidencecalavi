@@ -57,7 +57,7 @@ const ExitIntentPopup = () => {
           </h3>
           <p className="text-sm sm:text-base text-muted-foreground mb-6 leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif" }}>
             {t(
-              "Ne manquez pas nos meilleures d'offres. Laissez-nous votre email et bénéficiez d'une réduction exclusive sur votre prochain séjour.",
+              "Ne manquez pas nos meilleures offres. Laissez-nous votre email et bénéficiez d'une réduction exclusive sur votre prochain séjour.",
               "Don't miss our best offers. Leave us your email and enjoy an exclusive discount on your next stay."
             )}
           </p>
