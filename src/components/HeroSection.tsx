@@ -23,24 +23,29 @@ const HeroSection = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        <motion.span 
+        <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2 }}
-          className="inline-block px-4 py-1.5 mb-6 rounded-full border border-primary/30 bg-primary/10 backdrop-blur-sm text-primary text-[10px] sm:text-xs font-extrabold uppercase tracking-[0.2em] animate-pulse"
         >
-          {t("Bienvenue chez vous", "Welcome Home")}
-        </motion.span>
+          <motion.span
+            animate={{ scale: [1, 1.05, 1] }}
+            transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+            className="inline-block px-4 py-1.5 mb-6 rounded-full bg-white/90 backdrop-blur-md text-black text-[10px] sm:text-xs font-heading font-extrabold uppercase tracking-[0.2em] shadow-lg"
+          >
+            {t("Bienvenue chez vous", "Welcome Home")}
+          </motion.span>
+        </motion.div>
 
         <h1
-          className="font-heading font-extrabold tracking-tight text-primary"
+          className="font-heading font-extrabold tracking-tight text-white"
           style={{
             textShadow: "0 4px 30px rgba(0,0,0,0.6)",
             fontSize: "clamp(32px, 8vw, 84px)",
             lineHeight: 1.05,
           }}
         >
-          TAHA <span className="italic">RESIDENCE</span>
+          TAHA RESIDENCE
         </h1>
 
         <div className="h-1 lg:h-1.5 w-24 bg-primary mx-auto mt-6 sm:mt-8 rounded-full shadow-[0_0_15px_rgba(210,64,53,0.5)]"></div>
