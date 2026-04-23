@@ -12,7 +12,7 @@ const HeroSection = () => {
       style={{ minHeight: "100svh" }}
     >
       <div
-        className="absolute inset-0 bg-cover bg-center md:bg-fixed img-skeleton"
+        className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
       <div className="absolute inset-0" style={{ backgroundColor: "rgba(13,7,5,0.55)" }} />

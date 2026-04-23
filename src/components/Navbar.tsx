@@ -65,12 +65,12 @@ const Navbar = () => {
             className="font-heading font-extrabold text-primary flex items-center gap-2 group transition-transform active:scale-95"
           >
             <span 
-              className="text-lg sm:text-xl md:text-2xl tracking-tighter font-extrabold text-primary"
+              className="text-lg sm:text-xl md:text-2xl tracking-tighter font-heading font-extrabold text-foreground"
               style={{
                 textShadow: scrolled ? "none" : "0 2px 10px rgba(0,0,0,0.3)",
               }}
             >
-              TAHA <span className="italic">RESIDENCE</span>
+              TAHA <span>RESIDENCE</span>
             </span>
           </button>
 
