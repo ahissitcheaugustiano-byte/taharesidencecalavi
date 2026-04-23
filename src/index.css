@@ -6,22 +6,15 @@
 
 /* === Global responsive & performance baseline === */
 html {
-  overflow-x: hidden;
-  overflow-y: auto !important;
   scroll-behavior: smooth;
-  height: auto;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
   min-width: 320px;
 }
 
 body {
-  overflow-x: hidden;
-  overflow-y: auto !important;
-  overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
   position: relative;
-  height: auto;
   min-height: 100vh;
   width: 100%;
   margin: 0;
@@ -29,8 +22,7 @@ body {
 }
 
 #root {
-  overflow: visible;
-  height: auto;
+  overflow-x: hidden;
   min-height: 100vh;
   position: relative;
 }
@@ -172,8 +164,6 @@ input, select, textarea {
     @apply mx-auto;
     max-width: 1280px;
     width: 100%;
-    touch-action: pan-y;
-    -webkit-overflow-scrolling: touch;
   }
   .section-title {
     @apply font-heading font-bold text-foreground mb-4 animate-fade-in-up;
