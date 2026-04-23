@@ -12,44 +12,29 @@ import gallery5 from "@/assets/gallery-5.jpg";
 
 const rooms = [
   {
-    img: room1,
-    fr: { name: "Chambre Simple Ventilée", features: "Lit 1 place — Salle de bain privée — Ventilateur", price: "8 000 FCFA / nuit" },
-    en: { name: "Standard Fan Room", features: "Single bed — Private bathroom — Fan", price: "8,000 FCFA / night" },
-  },
-  {
     img: room2, badge: { fr: "Populaire", en: "Popular" }, badgeStyle: "bg-primary text-primary-foreground",
-    fr: { name: "Chambre Simple Climatisée", features: "Lit 1 place — Salle de bain privée — Climatisation", price: "13 000 FCFA / nuit" },
-    en: { name: "Standard AC Room", features: "Single bed — Private bathroom — Air conditioning", price: "13,000 FCFA / night" },
-  },
-  {
-    img: room3,
-    fr: { name: "Chambre Double Ventilée", features: "Lit 2 places — Salle de bain privée — Ventilateur", price: "13 000 FCFA / nuit" },
-    en: { name: "Double Fan Room", features: "Double bed — Private bathroom — Fan", price: "13,000 FCFA / night" },
+    fr: { name: "Chambre Simple (1 Place)", features: "Lit 1 place — Salle de bain privée — Ventilateur / Climatisation", price: "Ventilé 8 000 / Climatisé 13 000 FCFA" },
+    en: { name: "Single Room (1 Person)", features: "Single bed — Private bathroom — Fan / Air conditioning", price: "Fan 8,000 / AC 13,000 FCFA" },
   },
   {
     img: room4,
-    fr: { name: "Chambre Double Climatisée", features: "Lit 2 places — Salle de bain privée — Climatisation", price: "18 000 FCFA / nuit" },
-    en: { name: "Double AC Room", features: "Double bed — Private bathroom — Air conditioning", price: "18,000 FCFA / night" },
-  },
-  {
-    img: room5,
-    fr: { name: "Chambre Triple + Salon (Ventilée)", features: "Lit 3 places — Salon — Salle de bain privée — Ventilateur", price: "15 000 FCFA / nuit" },
-    en: { name: "Triple Room + Lounge (Fan)", features: "Triple bed — Lounge — Private bathroom — Fan", price: "15,000 FCFA / night" },
+    fr: { name: "Chambre Double (2 Places)", features: "Lit 2 places — Salle de bain privée — Ventilateur / Climatisation", price: "Ventilé 13 000 / Climatisé 18 000 FCFA" },
+    en: { name: "Double Room (2 Persons)", features: "Double bed — Private bathroom — Fan / Air conditioning", price: "Fan 13,000 / AC 18,000 FCFA" },
   },
   {
     img: room6, badge: { fr: "Confort", en: "Comfort" }, badgeStyle: "bg-foreground text-background",
-    fr: { name: "Chambre Triple + Salon (Climatisée)", features: "Lit 3 places — Salon — Salle de bain privée — Climatisation", price: "20 000 FCFA / nuit" },
-    en: { name: "Triple Room + Lounge (AC)", features: "Triple bed — Lounge — Private bathroom — Air conditioning", price: "20,000 FCFA / night" },
+    fr: { name: "Suite Familiale (3 Places + Salon)", features: "Lit 3 places — Salon — Salle de bain privée — Ventilateur / Climatisation", price: "Ventilé 15 000 / Climatisé 20 000 FCFA" },
+    en: { name: "Family Suite (3 Persons + Lounge)", features: "Triple bed — Lounge — Private bathroom — Fan / Air conditioning", price: "Fan 15,000 / AC 20,000 FCFA" },
   },
   {
     img: gallery4,
-    fr: { name: "Chambre Double Climatisée (Confort)", features: "Lit 2 places — Salle de bain privée — Climatisation", price: "20 000 FCFA / nuit" },
-    en: { name: "Double AC Room (Comfort)", features: "Double bed — Private bathroom — Air conditioning", price: "20,000 FCFA / night" },
+    fr: { name: "Chambre Double Confort (Climatisée)", features: "Lit 2 places — Salle de bain privée — Climatisation", price: "20 000 FCFA / nuit" },
+    en: { name: "Comfort Double Room (AC)", features: "Double bed — Private bathroom — Air conditioning", price: "20,000 FCFA / night" },
   },
   {
     img: gallery5, badge: { fr: "Luxe", en: "Luxury" }, badgeStyle: "bg-foreground text-background",
-    fr: { name: "Chambre Triple Climatisée (Luxe)", features: "Lit 3 places — Salle de bain privée — Climatisation", price: "25 000 FCFA / nuit" },
-    en: { name: "Triple AC Room (Luxury)", features: "Triple bed — Private bathroom — Air conditioning", price: "25,000 FCFA / night" },
+    fr: { name: "Chambre Triple Luxe (Climatisée)", features: "Lit 3 places — Salle de bain privée — Climatisation", price: "25 000 FCFA / nuit" },
+    en: { name: "Luxury Triple Room (AC)", features: "Triple bed — Private bathroom — Air conditioning", price: "25,000 FCFA / night" },
   },
 ];
 

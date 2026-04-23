@@ -5,24 +5,18 @@ import aboutImg from "@/assets/about.jpg";
 
 const roomOptions = {
   fr: [
-    "Chambre Simple Ventilée — 8 000 FCFA",
-    "Chambre Simple Climatisée — 13 000 FCFA",
-    "Chambre Double Ventilée — 13 000 FCFA",
-    "Chambre Double Climatisée — 18 000 FCFA",
-    "Chambre Triple + Salon (Ventilée) — 15 000 FCFA",
-    "Chambre Triple + Salon (Climatisée) — 20 000 FCFA",
-    "Chambre Double Climatisée (Confort) — 20 000 FCFA",
-    "Chambre Triple Climatisée (Luxe) — 25 000 FCFA",
+    "Chambre Simple (1 Place) — 8 000 / 13 000 FCFA",
+    "Chambre Double (2 Places) — 13 000 / 18 000 FCFA",
+    "Suite Familiale (3 Places + Salon) — 15 000 / 20 000 FCFA",
+    "Chambre Double Confort (Climatisée) — 20 000 FCFA",
+    "Chambre Triple Luxe (Climatisée) — 25 000 FCFA",
   ],
   en: [
-    "Standard Fan Room — 8,000 FCFA",
-    "Standard AC Room — 13,000 FCFA",
-    "Double Fan Room — 13,000 FCFA",
-    "Double AC Room — 18,000 FCFA",
-    "Triple Room + Lounge (Fan) — 15,000 FCFA",
-    "Triple Room + Lounge (AC) — 20,000 FCFA",
-    "Double AC Room (Comfort) — 20,000 FCFA",
-    "Triple AC Room (Luxury) — 25,000 FCFA",
+    "Single Room (1 Person) — 8,000 / 13,000 FCFA",
+    "Double Room (2 Persons) — 13,000 / 18,000 FCFA",
+    "Family Suite (3 Persons + Lounge) — 15,000 / 20,000 FCFA",
+    "Comfort Double Room (AC) — 20,000 FCFA",
+    "Luxury Triple Room (AC) — 25,000 FCFA",
   ],
 };
 
