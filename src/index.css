@@ -5,17 +5,34 @@
 @tailwind utilities;
 
 /* === Global responsive & performance baseline === */
-html, body {
+html {
   overflow-x: hidden;
-  width: 100%;
-  overscroll-behavior: contain;
-  -webkit-overflow-scrolling: touch;
+  overflow-y: auto !important;
   scroll-behavior: smooth;
+  height: auto;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
   min-width: 320px;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto !important;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
   margin: 0;
   padding: 0;
+}
+
+#root {
+  overflow: visible;
+  height: auto;
+  min-height: 100vh;
+  position: relative;
 }
 * {
   -webkit-tap-highlight-color: transparent;
@@ -155,6 +172,8 @@ input, select, textarea {
     @apply mx-auto;
     max-width: 1280px;
     width: 100%;
+    touch-action: pan-y;
+    -webkit-overflow-scrolling: touch;
   }
   .section-title {
     @apply font-heading font-bold text-foreground mb-4 animate-fade-in-up;
@@ -219,6 +238,7 @@ input, select, textarea {
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
+    touch-action: pan-x;
   }
   .carousel-x::-webkit-scrollbar { display: none; }
   .carousel-x > * { scroll-snap-align: start; }

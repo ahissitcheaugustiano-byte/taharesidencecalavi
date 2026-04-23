@@ -14,6 +14,7 @@ const LanguageContext = createContext<LanguageContextType>({
   t: (fr) => fr,
 });
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useLanguage = () => useContext(LanguageContext);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {

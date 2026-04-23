@@ -17,7 +17,7 @@ import FloatingElements from "@/components/FloatingElements";
 
 const Index = () => {
   return (
-    <div className="overflow-x-hidden">
+    <div className="w-full relative" style={{ overflow: 'visible', height: 'auto' }}>
       <AnnouncementBanner />
       <Navbar />
       <HeroSection />

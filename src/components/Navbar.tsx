@@ -52,10 +52,10 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed left-0 right-0 z-50 transition-all duration-500 ${
+        className={`sticky top-0 z-[1000] pointer-events-auto transition-all duration-500 w-full ${
           scrolled
-            ? "top-0 bg-background/95 backdrop-blur-lg shadow-lg border-b border-white/10"
-            : "top-0 bg-transparent"
+            ? "bg-background/95 backdrop-blur-lg shadow-lg border-b border-white/10"
+            : "bg-transparent"
         }`}
         style={{ paddingTop: "var(--safe-top)" }}
       >

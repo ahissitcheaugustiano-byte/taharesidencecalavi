@@ -9,6 +9,17 @@ if (typeof window !== "undefined") {
   
   console.log("TAHA RESIDENCE: App is loading...");
   console.log("BUILD SIGNATURE: 2026-04-21-15-14-10");
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.body.style.overflow = '';
+    document.body.style.position = '';
+    document.body.style.height = '';
+  });
+
+  // Make all touch listeners passive: true on the main document level
+  const makePassive = (e: Event) => {};
+  document.addEventListener('touchstart', makePassive, { passive: true });
+  document.addEventListener('touchmove', makePassive, { passive: true });
 }
 
 try {
