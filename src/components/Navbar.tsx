@@ -8,7 +8,7 @@ const navItems = {
   en: ["Home", "Video", "Rooms", "Amenities", "Gallery", "Reviews", "FAQ", "Contact"],
 };
 
-const sectionIds = ["hero", "video", "rooms", "amenities", "gallery", "testimonials", "faq", "contact"];
+const sectionIds = ["hero", "video", "rooms", "amenities", "gallery", "testimonials", "faq", "location"];
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);

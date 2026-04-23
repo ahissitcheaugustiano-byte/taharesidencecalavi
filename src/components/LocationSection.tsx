@@ -5,7 +5,7 @@ const LocationSection = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="section-padding bg-background-alt">
+    <section id="location" className="section-padding bg-background-alt">
       <div className="section-container">
         <motion.div
           className="text-center"

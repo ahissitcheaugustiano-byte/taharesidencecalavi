@@ -38,8 +38,8 @@ const AboutSection = () => {
             </h2>
             <p className="text-muted-foreground leading-relaxed mt-4" style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 500 }}>
               {t(
-                "Refuge au cœur de Calavi Bidossessi, à quelques minutes de Cotonou, TAHA RESIDENCE vous offre un cadre d'exception : propre, sécurisé et un accueil chaleureux. Chaque chambre a été pensée pour vous garantir confort et tranquillité, que vous soyez en déplacement professionnel ou à la découverte du Bénin.",
-                "A refuge in the heart of Calavi Bidossessi, just minutes from Cotonou, TAHA RESIDENCE offers you an exceptional setting: clean, secure, with a warm welcome. Every room has been designed to guarantee your comfort and peace of mind, whether you are traveling for business or exploring Benin."
+                "Refuge au cœur de Calavi Bidossessi, à quelques minutes de Cotonou et à 5 min du village Lacustre de Ganvié, TAHA RESIDENCE vous offre un cadre d'exception : propre, sécurisé et un accueil chaleureux. Chaque chambre a été pensée pour vous garantir confort et tranquillité, que vous soyez en déplacement professionnel ou à la découverte du Bénin.",
+                "A refuge in the heart of Calavi Bidossessi, just minutes from Cotonou and 5 min from the Lake Village of Ganvié, TAHA RESIDENCE offers you an exceptional setting: clean, secure, with a warm welcome. Every room has been designed to guarantee your comfort and peace of mind, whether you are traveling for business or exploring Benin."
               )}
             </p>
           </motion.div>

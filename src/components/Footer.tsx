@@ -10,7 +10,7 @@ const Footer = () => {
     fr: ["Accueil", "Chambres", "Équipements", "Galerie", "Témoignages", "FAQ", "Contact"],
     en: ["Home", "Rooms", "Amenities", "Gallery", "Reviews", "FAQ", "Contact"],
   };
-  const navIds = ["hero", "rooms", "amenities", "gallery", "testimonials", "faq", "contact"];
+  const navIds = ["hero", "rooms", "amenities", "gallery", "testimonials", "faq", "location"];
 
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -74,10 +74,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4 text-primary" style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 600, fontSize: "clamp(16px, 2.5vw, 22px)" }}>{t("Nous contacter", "Contact Us")}</h4>
             <div className="space-y-4 opacity-70" style={{ fontSize: "clamp(14px, 1.5vw, 16px)" }}>
-              <p className="flex items-center gap-2"><i className="fas fa-phone text-primary"></i> +229 01-97-69-37-39</p>
-              <p className="flex items-center gap-2"><i className="fas fa-phone text-primary"></i> +229 01-44-42-99-63</p>
-              <p className="flex items-center gap-2"><i className="fab fa-whatsapp text-primary"></i> +229 01-95-86-20-80</p>
-              <p className="flex items-center gap-2"><i className="fas fa-envelope text-primary"></i> taharesidance@gmail.com</p>
+              <a href="tel:+2290197693739" className="flex items-center gap-2 hover:text-primary transition-all"><i className="fas fa-phone text-primary"></i> +229 01-97-69-37-39</a>
+              <a href="tel:+2290144429963" className="flex items-center gap-2 hover:text-primary transition-all"><i className="fas fa-phone text-primary"></i> +229 01-44-42-99-63</a>
+              <a href="https://wa.me/2290195862080" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-all"><i className="fab fa-whatsapp text-primary"></i> +229 01-95-86-20-80</a>
+              <a href="mailto:taharesidance@gmail.com" className="flex items-center gap-2 hover:text-primary transition-all"><i className="fas fa-envelope text-primary"></i> taharesidance@gmail.com</a>
               <p className="flex items-center gap-2"><i className="fas fa-location-dot text-primary"></i> Calavi Bidossessi, Bénin</p>
             </div>
           </div>
@@ -116,8 +116,8 @@ const Footer = () => {
 
         <div className="border-t border-background/10 mt-10 pt-6 text-center text-xs opacity-50">
           {t(
-            "2025 TAHA RESIDENCE — Tous droits réservés | Calavi Bidossessi, Bénin",
-            "2025 TAHA RESIDENCE — All rights reserved | Calavi Bidossessi, Benin"
+            "2026 TAHA RESIDENCE — Tous droits réservés | Calavi Bidossessi, Bénin",
+            "2026 TAHA RESIDENCE — All rights reserved | Calavi Bidossessi, Benin"
           )}
         </div>
       </div>
