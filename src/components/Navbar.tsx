@@ -99,12 +99,19 @@ const Navbar = () => {
               {isDark ? <i className="fas fa-sun text-sm md:text-base"></i> : <i className="fas fa-moon text-sm md:text-base"></i>}
             </button>
 
-            <button
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              animate={{ 
+                borderColor: ["rgba(34, 197, 94, 0.2)", "rgba(34, 197, 94, 1)", "rgba(34, 197, 94, 0.2)"],
+                boxShadow: ["0 0 0px rgba(34, 197, 94, 0)", "0 0 12px rgba(34, 197, 94, 0.4)", "0 0 0px rgba(34, 197, 94, 0)"]
+              }}
+              transition={{ repeat: Infinity, duration: 2 }}
               onClick={() => setLang(lang === "fr" ? "en" : "fr")}
-              className="w-10 h-10 flex items-center justify-center text-[10px] md:text-xs font-bold border border-primary/20 rounded-full hover:bg-primary/10 transition-colors btn-ripple"
+              className="w-10 h-10 flex items-center justify-center text-[10px] md:text-xs font-black border-2 border-green-500 text-green-600 dark:text-green-400 rounded-full hover:bg-green-500 hover:text-white transition-all duration-300 shadow-lg bg-background"
             >
               {lang === "fr" ? "EN" : "FR"}
-            </button>
+            </motion.button>
 
             <a
               href="https://wa.me/2290195862080"
