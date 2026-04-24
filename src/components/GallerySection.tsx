@@ -51,7 +51,7 @@ const GallerySection = () => {
             >
               <img
                 src={img}
-                alt={`Galerie ${i + 1}`}
+                alt={`Taha Residence Benin - Galerie ${i + 1}`}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 loading="lazy"
                 decoding="async"
@@ -66,7 +66,7 @@ const GallerySection = () => {
               <img
                 key={i}
                 src={img}
-                alt={`Carousel ${i + 1}`}
+                alt={`Taha Residence Benin - Carousel ${i + 1}`}
                 className="h-32 sm:h-40 md:h-56 w-auto rounded-lg object-cover flex-shrink-0"
                 loading="lazy"
                 decoding="async"

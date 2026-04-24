@@ -54,7 +54,7 @@ const AboutSection = () => {
           >
             <img
               src={aboutImg}
-              alt={t("Chambre TAHA RESIDENCE", "TAHA RESIDENCE Room")}
+              alt={t("Chambre climatisée Taha Residence Benin Calavi", "Air-conditioned Room Taha Residence Benin Calavi")}
               className="w-full h-full object-cover object-center"
               loading="lazy"
               decoding="async"

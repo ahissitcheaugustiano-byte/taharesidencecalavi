@@ -72,7 +72,7 @@ const RoomsSection = () => {
                 <div className="relative overflow-hidden" style={{ aspectRatio: "16 / 9" }}>
                   <img
                     src={room.img}
-                    alt={data.name}
+                    alt={data.name + " - Taha Residence Benin Calavi"}
                     className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                     decoding="async"
