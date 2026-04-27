@@ -20,8 +20,8 @@ const rooms = [
   },
   {
     img: userRoomSuite, badge: { fr: "Confort", en: "Comfort" }, badgeStyle: "bg-foreground text-background",
-    fr: { name: "Suite Familiale (3 Places + Salon)", features: "Lit 3 places — Salon — Salle de bain privée — Ventilateur / Climatisation", price: "Ventilé 15 000 / Climatisé 20 000 FCFA" },
-    en: { name: "Family Suite (3 Persons + Lounge)", features: "Triple bed — Lounge — Private bathroom — Fan / Air conditioning", price: "Fan 15,000 / AC 20,000 FCFA" },
+    fr: { name: "Suite Familiale (3 Places + Salon)", features: "Lit 3 places — Salon — Salle de bain privée — Ventilateur / Climatisation", price: "Ventilé 20 000 / Climatisé 25 000 FCFA" },
+    en: { name: "Family Suite (3 Persons + Lounge)", features: "Triple bed — Lounge — Private bathroom — Fan / Air conditioning", price: "Fan 20,000 / AC 25,000 FCFA" },
   },
   {
     img: userRoomConfort,

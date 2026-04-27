@@ -7,14 +7,14 @@ const roomOptions = {
   fr: [
     "Chambre Simple (1 Place) — 8 000 / 13 000 FCFA",
     "Chambre Double (2 Places) — 13 000 / 18 000 FCFA",
-    "Suite Familiale (3 Places + Salon) — 15 000 / 20 000 FCFA",
+    "Suite Familiale (3 Places + Salon) — 20 000 / 25 000 FCFA",
     "Chambre Double Confort (Climatisée) — 20 000 FCFA",
     "Chambre Triple Luxe (Climatisée) — 25 000 FCFA",
   ],
   en: [
     "Single Room (1 Person) — 8,000 / 13,000 FCFA",
     "Double Room (2 Persons) — 13,000 / 18,000 FCFA",
-    "Family Suite (3 Persons + Lounge) — 15,000 / 20,000 FCFA",
+    "Family Suite (3 Persons + Lounge) — 20,000 / 25,000 FCFA",
     "Comfort Double Room (AC) — 20,000 FCFA",
     "Luxury Triple Room (AC) — 25,000 FCFA",
   ],
