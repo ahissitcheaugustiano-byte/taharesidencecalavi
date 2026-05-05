@@ -12,12 +12,28 @@ import room5 from "@/assets/room-5-updated.jpg";
 import room6 from "@/assets/room-6-updated-v2.jpg";
 import room2Alt from "@/assets/room-2-updated.jpg";
 
+import img1 from "@/assets/DSC_0603.JPG";
+import img2 from "@/assets/DSC_0630.JPG";
+import img3 from "@/assets/DSC_0647.JPG";
+import img4 from "@/assets/DSC_0649.JPG";
+import img5 from "@/assets/DSC_0636.JPG";
+import img6 from "@/assets/DSC_0637.JPG";
+import img7 from "@/assets/DSC_0556.JPG";
+import img8 from "@/assets/DSC_0577.JPG";
+import img9 from "@/assets/DSC_0580.JPG";
+import img10 from "@/assets/DSC_0598.JPG";
+import img11 from "@/assets/DSC_0660.JPG";
+
 const masonryImages = [
+  img1, img2, img3,
+  img4, img5, img6,
+  img7, img8, img9,
+  img10, img11,
   room4, room6, room1,
   room2, about, room3,
   room2Alt, heroBg, room5
 ];
-const carouselImages = [room1, room2, room3, room4];
+const carouselImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11];
 
 const GallerySection = () => {
   const { t } = useLanguage();
