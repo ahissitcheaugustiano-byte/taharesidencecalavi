@@ -12,21 +12,12 @@ import room5 from "@/assets/room-5-updated.jpg";
 import room6 from "@/assets/room-6-updated-v2.jpg";
 import room2Alt from "@/assets/room-2-updated.jpg";
 
-import ext1 from "@/assets/gallery-ext-1.jpeg";
-import ext2 from "@/assets/gallery-ext-2.jpeg";
-import ext3 from "@/assets/gallery-ext-3.jpeg";
-import ext4 from "@/assets/gallery-ext-4.jpeg";
-import ext5 from "@/assets/gallery-ext-5.jpeg";
-import ext6 from "@/assets/gallery-ext-6.jpeg";
-
 const masonryImages = [
-  ext1, ext2, ext3,
-  ext4, ext5, ext6,
   room4, room6, room1,
   room2, about, room3,
   room2Alt, heroBg, room5
 ];
-const carouselImages = [ext1, ext2, ext3, ext4, room1, room2, room3, room4];
+const carouselImages = [room1, room2, room3, room4];
 
 const GallerySection = () => {
   const { t } = useLanguage();
