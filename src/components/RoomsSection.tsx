@@ -1,7 +1,7 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { motion } from "framer-motion";
 
-import room1 from "@/assets/room-1.jpg";
+import room1 from "@/assets/DSC_0659.JPG";
 import userRoomDouble from "@/assets/user-room-double.jpg";
 import userRoomSuite from "@/assets/user-room-suite.jpg";
 import userRoomConfort from "@/assets/user-room-confort.jpg";
