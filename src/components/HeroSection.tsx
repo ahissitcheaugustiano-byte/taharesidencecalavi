@@ -38,11 +38,13 @@ const HeroSection = () => {
         </motion.div>
 
         <h1
-          className="font-heading font-extrabold tracking-tight text-white"
+          className="font-heading font-extrabold tracking-tight text-white hero-title"
           style={{
             textShadow: "0 4px 30px rgba(0,0,0,0.6)",
-            fontSize: "clamp(32px, 8vw, 84px)",
+            fontSize: "clamp(24px, 8vw, 84px)",
             lineHeight: 1.05,
+            wordWrap: "break-word",
+            overflowWrap: "break-word"
           }}
         >
           TAHA RESIDENCE

@@ -15,8 +15,8 @@ const rooms = [
   },
   {
     img: userRoomDouble, badge: { fr: "Populaire", en: "Popular" }, badgeStyle: "bg-primary text-primary-foreground",
-    fr: { name: "Chambre Double (2 Places)", features: "Lit 2 places — Salle de bain privée — Ventilateur / Climatisation", price: "Ventilé 13 000 / Climatisé 18 000 FCFA" },
-    en: { name: "Double Room (2 Persons)", features: "Double bed — Private bathroom — Fan / Air conditioning", price: "Fan 13,000 / AC 18,000 FCFA" },
+    fr: { name: "Chambre Double (2 Places)", features: "Lit 2 places — Salle de bain privée — Ventilateur / Climatisation", price: "Ventilé 15 000 / Climatisé 18 000 FCFA" },
+    en: { name: "Double Room (2 Persons)", features: "Double bed — Private bathroom — Fan / Air conditioning", price: "Fan 15,000 / AC 18,000 FCFA" },
   },
   {
     img: userRoomSuite, badge: { fr: "Confort", en: "Comfort" }, badgeStyle: "bg-foreground text-background",
